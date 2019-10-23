@@ -8,7 +8,7 @@ A easy-to-use command-line tool for flashing programmes or .hex files onto ardui
 5. GPIO 9  ==>  Arduino digital 12
 6. GPIO 10  ==>  Arduino digital 11
 8. GPIO GND  ==>  Arduino GND
-
+9. Make sure that the Arduino is powered
 
 ## How to use:
 1. Download and copy both scripts into /usr/bin
