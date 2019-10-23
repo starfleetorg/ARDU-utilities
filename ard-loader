@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+import os
+
+print("+---- GPIO(BCM) to Arduino connections ----+")
+print("|     GPIO 8  ==>  Arduino reset(RES)      |")
+print("|------------------------------------------|")
+print("|     GPIO 11  ==>  Arduino digital 13     |")
+print("|     GPIO 9  ==>  Arduino digital 12      |")
+print("|     GPIO 10  ==>  Arduino digital 11     |")
+print("|------------------------------------------|")
+print("|     GPIO 3.3V  ==>  Arduino 3.3V         |")
+print("|     GPIO GND  ==>  Arduino GND           |")
+print("+------------------------------------------+")
+
+print("[i] Compiling program")
+os.system("make > /dev/null")
+
+pin = input("[?] Press ENTER to upload... ")
+
+print("[i] Uploading program")
+os.system("sudo avrdude -p m328p -c gpio -e -U flash:w:build-uno/main.hex")
