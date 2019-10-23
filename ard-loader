@@ -8,7 +8,6 @@ print("|     GPIO 11  ==>  Arduino digital 13     |")
 print("|     GPIO 9  ==>  Arduino digital 12      |")
 print("|     GPIO 10  ==>  Arduino digital 11     |")
 print("|------------------------------------------|")
-print("|     GPIO 3.3V  ==>  Arduino 3.3V         |")
 print("|     GPIO GND  ==>  Arduino GND           |")
 print("+------------------------------------------+")
 
