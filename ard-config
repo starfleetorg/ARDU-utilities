@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+import os
+
+os.system("touch main.ino")
+os.system("touch Makefile")
+
+os.system('echo "ARDUINO_DIR = /usr/share/arduino" | sudo tee -a Makefile')
+os.system('echo "ARDUINO_PORT = /dev/ttyUSB0" | sudo tee -a Makefile')
+os.system('echo "USER_LIB_PATH = /home/luke/Sketchbook/Libraries" | sudo tee -a Makefile')
+
+boardtype = input("[?] Board Type: ")
+
+os.system('echo "BOARD_TAG = ' + boardtype +'" | sudo tee -a Makefile')
+os.system('echo "include /usr/share/arduino/Arduino.mk" | sudo tee -a Makefile')
