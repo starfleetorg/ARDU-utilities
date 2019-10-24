@@ -18,7 +18,8 @@ A easy-to-use command-line tool for flashing programmes or .hex files onto ardui
 5. run "ard-loader to flash"(this will erase the bootloader, so you can only programme the Arduino over the RPi GPIO, if you want to restore the Arduino, just flash a new bootloader onth the Arduino using this software)
 
 ## Re-flashing the bootloader:
-1. Create a new folder
+1. Create a new folder and cd into it
 2. Create another folder call build-uno
 3. Put your bootloader in that folder
-4. Flash the bootloader just like any other programmes you flash before with this tool
+4. go back the folder containing the build-uno folder
+5. Flash the bootloader just like any other programmes you flash before with this tool
