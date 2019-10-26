@@ -18,7 +18,7 @@ A easy-to-use command-line tool for flashing programmes or .hex files onto ardui
 0. Install arduino-mk and avrdude
 1. Download and copy both scripts into /usr/bin
 2. Run chmod +x for both files
-3. Make a folder and go into it
+3. Make a folder called "main" and go into it
 4. Run "ard-config" to set everthing up
 5. Write your programme in the file called main.ino
 6. Run "ard-loader" to flash(this will erase the bootloader, so you can only programme the Arduino over the RPi GPIO, if you want to restore the Arduino, just flash a new bootloader onth the Arduino using this software)
