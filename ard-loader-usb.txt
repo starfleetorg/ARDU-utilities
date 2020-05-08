@@ -1,0 +1,9 @@
+# if you would want to preserve the bootloader on the Arduino, then connect the board to a USB port and use this program instead
+
+import os
+
+chip = input("Chip name: ")
+port = input("Serial port: /dev/")
+program = input("Program name: ")
+
+os.system("sudo avrdude -p " + chip + " -c Arduino -P /dev/" + port + " -e -U " + program + ".ino.standard.hex")
