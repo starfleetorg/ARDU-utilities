@@ -8,4 +8,4 @@ chip = input("Chip name: ")
 port = input("Serial port: /dev/")
 program = input("Program name: ")
 
-os.system("sudo avrdude -p " + chip + " -c Arduino -P /dev/" + port + " -e -U " + program + ".ino.standard.hex")
+os.system("sudo avrdude -p " + chip + " -c Arduino -P /dev/" + port + " -e -U " + program + "main.hex")
